@@ -7,7 +7,7 @@ If two tasks are executing in parallel, which of the following statements is tru
 They are using exactly the same hardware at the same time.
 
 
-They are using different hardware, but running at the same time.
+X - They are using different hardware, but running at the same time.
 
 
 Their executions are alternating in time.
@@ -30,7 +30,7 @@ Temperature is a performance bottleneck.
 Clock frequency cannot be improved without considering temperature.
 
 
-Memory access time is a performance bottleneck.
+X - Memory access time is a performance bottleneck.
 
 3.
 Question 3
@@ -41,7 +41,7 @@ What does Moore’s law directly observe?
 Power consumption doubles every 18 months.
 
 
-Transistor density doubles every 2 years.
+X - Transistor density doubles every 2 years.
 
 
 Processor power doubles every 2 years.
@@ -55,7 +55,7 @@ How is dynamic power consumption related to voltage swing?
 
 1 point
 
-Dynamic power is proportional to the square of the voltage swing.
+X - Dynamic power is proportional to the square of the voltage swing.
 
 
 Dynamic power is proportional to the cube of the voltage swing.
@@ -87,7 +87,7 @@ I and II, NOT III.
 II and III, NOT I.
 
 
-I, II, and III.
+X - I, II, and III.
 
 6.
 Question 6
@@ -110,7 +110,7 @@ I and II, NOT III.
 II and III, NOT I.
 
 
-I, II, and III.
+X - I, II, and III.
 
 7.
 Question 7
@@ -121,7 +121,7 @@ One benefit of concurrent execution on a single processor is that it can hide la
 When tasks execute in parallel, only the delay of the slowest task matters.
 
 
-One task can execute while another task is waiting on something.
+X - One task can execute while another task is waiting on something.
 
 
 The concurrent execution time of two tasks is less than the sum of their sequential execution times.

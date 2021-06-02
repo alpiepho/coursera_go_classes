@@ -13,7 +13,7 @@ III. Shared libraries
 I only.
 
 
-I and II, NOT III
+X - I and II, NOT III
 
 
 II and III, NOT I
@@ -36,7 +36,7 @@ Partitions processor hardware to allow parallel execution of multiple processes.
 Combines different processes into a single process.
 
 
-Interleaves the execution of different processes .
+X - Interleaves the execution of different processes .
 
 3.
 Question 3
@@ -47,7 +47,7 @@ What is the “context” that is referred to in the term “context switch”?
 Shared libraries used by a process.
 
 
-Memory and register values unique to a process.
+X - Memory and register values unique to a process.
 
 
 The parameters specific to the operating system.
@@ -61,7 +61,7 @@ What is the difference between a thread and a process?
 
 1 point
 
-A thread has less unique context than a process.
+X - A thread has less unique context than a process.
 
 
 Threads do not have unique program counter values.
@@ -81,7 +81,7 @@ What is the main function of the Go runtime scheduler?
 Schedules operating systems processes.
 
 
-Schedules goroutines inside an operating system thread .
+X - Schedules goroutines inside an operating system thread .
 
 
 Schedules operating system threads inside a process.
@@ -98,7 +98,7 @@ Suppose that there are two goroutines executing, g1 and g2. Assume that g1 requi
 g2 will complete before g1.
 
 
-Nothing!
+X - Nothing!
 
 
 g1 will complete before g2.
@@ -118,7 +118,7 @@ The relative order of the execution of their instructions is deterministic.
 The relative order of the execution of their instructions is unknown, but it is the same each time they are executed together.
 
 
-The relative order of the execution of their instructions can be different every time that they are executed together.
+X - The relative order of the execution of their instructions can be different every time that they are executed together.
 
 
 The relative order of the execution of their instructions can be determined from startup conditions.
