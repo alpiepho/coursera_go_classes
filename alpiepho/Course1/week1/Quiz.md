@@ -6,7 +6,7 @@ What does a compiler do?
 
 1 point
 
-Generates
+X - Generates
 executable machine code from source code in a high-level language    
 
 
@@ -31,7 +31,7 @@ The variable declaration
 The instructions where the variable is assigned a value
 
 
-Region of a program where the variable can be accessed
+X - Region of a program where the variable can be accessed
 
 
 The set of values to which a variable can be assigned
@@ -46,7 +46,7 @@ Reorganization of source code to reduce the number of
 function calls
 
 
-Deallocation of objects which are no longer in use
+X - Deallocation of objects which are no longer in use
 
 
 Reorganization of source code to improve encapsulation and understandability
@@ -60,7 +60,7 @@ What does an interpreter do?
 
 1 point
 
-Converts instructions in a high-level language into machine
+X - Converts instructions in a high-level language into machine
 code at runtime
 
 
@@ -83,7 +83,7 @@ Concurrency always results in some performance improvement.
 True
 
 
-False
+X - False
 
 6.
 Question 6
@@ -92,13 +92,13 @@ variable? (Select ALL that are correct.)
 
 1 point
 
-Size in memory
+X - Size in memory
 
 
-Operations that can be performed on the variable
+X - Operations that can be performed on the variable
 
 
-The data that can be contained in the object
+X - The data that can be contained in the object
 
 
 The number of characters in the variable's name
@@ -118,7 +118,7 @@ os
 init
 
 
-main
+X - main
 
 8.
 Question 8
@@ -126,7 +126,7 @@ Which of the following is an example of a short variable declaration?
 
 1 point
 
-x := 2.3
+X - x := 2.3
 
 
 var x int =10

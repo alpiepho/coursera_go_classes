@@ -5,7 +5,7 @@ average of two integers a and b?
 
 1 point
 
-avg := 2 % (a + b)
+X - avg := 2 % (a + b)
 
 
 avg := float64(a + b) / 2
@@ -38,7 +38,7 @@ func main() {
 102
 
 
-20
+X - 20
 
 3.
 Question 3
@@ -55,7 +55,7 @@ func main() {
 ianianian
 
 
-iainainan
+X - iainainan
 
 
 iainanian
@@ -81,7 +81,7 @@ func main() {
 
 1 point
 
-1
+X - 1
 
 
 2
@@ -96,7 +96,6 @@ func main() {
 Question 5
 What is printed by this code?
 
-123456789101112
 func main() {
   var xtemp int
   x1 := 0
@@ -116,7 +115,7 @@ func main() {
 13
 
 
-8
+X - 8
 
 
 4
@@ -127,7 +126,6 @@ True or False:
 
 This code compiles correctly.
 
-12345678
 func main() {
   var x int
   var y *int
@@ -141,7 +139,7 @@ func main() {
 True
 
 
-False
+X - False
 
 7.
 Question 7
@@ -158,4 +156,4 @@ int32
 int
 
 
-All of these types provide the same accuracy
+X - All of these types provide the same accuracy

@@ -2,7 +2,6 @@
 Question 1
 What is printed when the following program is executed?
 
-1234567891011
 func main() {
   x := []int {4, 8, 5}
   y := -1
@@ -19,7 +18,7 @@ func main() {
 4
 
 
-8
+X - 8
 
 
 5
@@ -31,7 +30,6 @@ func main() {
 Question 2
 What is printed when the following program is executed?
 
-123456789
 func main() {
   x := [...]int {4, 8, 5}
   y := x[0:2]
@@ -46,7 +44,7 @@ func main() {
 [1 3 8]
 
 
-[1 8 3]
+X - [1 8 3]
 
 
 [4 1 3]
@@ -58,7 +56,6 @@ func main() {
 Question 3
 What is printed when the following program is executed?
 
-1234567
 func main() {
   x := [...]int {1, 2, 3, 4, 5}
   y := x[0:2]
@@ -68,7 +65,7 @@ func main() {
 
 1 point
 
-2 5 3 4
+X - 2 5 3 4
 
 
 2 4 3 4
@@ -105,13 +102,12 @@ harris1
 1harris
 
 
-harris2
+X - harris2
 
 5.
 Question 5
 What is printed when the following program is executed?
 
-1234567891011121314151617
 type P struct {
     x string
 y int
@@ -140,7 +136,6 @@ x
 Question 6
 What is printed when the following program is executed?
 
-123456
 func main() {
   s := make([]int, 0, 3)
   s = append(s, 100)
@@ -149,7 +144,7 @@ func main() {
 
 1 point
 
-1 3
+X - 1 3
 
 
 0 3
