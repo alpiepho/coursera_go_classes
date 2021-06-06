@@ -15,7 +15,7 @@ Facilitate code reuse
 Support abstraction
 
 
-All of the above
+X - All of the above
 
 2.
 Question 2
@@ -29,7 +29,7 @@ A function can have only one return value.
 A function cannot have more than two parameters.
 
 
-A function can have parameters of different types.
+X - A function can have parameters of different types.
 
 
 The type of the arguments do not need to be specified.
@@ -43,7 +43,7 @@ structure itself?
 
 1 point
 
-The function needs to
+X - The function needs to
 modify the structure.
 
 
@@ -72,7 +72,7 @@ III. Low control-flow complexity
 I and II
 
 
-I and III
+X - I and III
 
 
 II and III
@@ -98,6 +98,6 @@ slice.
 There is no difference.
 
 
-Passing an array passes a copy of the entire
+X - Passing an array passes a copy of the entire
 array.
 
