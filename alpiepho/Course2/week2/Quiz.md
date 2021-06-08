@@ -19,7 +19,7 @@ f = test
 
 1 point
 
-Yes
+X - Yes
 
 
 No
@@ -35,7 +35,7 @@ as an argument and returns a string?
 func fA(fB (int) string)
 
 
-func fA(fB func (int) string) 
+X - func fA(fB func (int) string) 
 
 
 func fA(fB func (int))
@@ -56,7 +56,7 @@ A function with no return value
 A function with multiple names
 
 
-A function with no name
+X - A function with no name
 
 
 A function with no arguments
@@ -78,11 +78,10 @@ func fA(fB func (int) string) {}
 func fA(int) string {} 
 
 
-func fA() fB func (string) int{}
+X - func fA() fB func (string) int{}
 
 5.
 Question 5
-12345678910111213
 func fA() func() int {
     i := 0
     return func() int {
@@ -107,7 +106,7 @@ What does the above code print on the screen?
 01
 
 
-1
+X - 1
 
 6.
 Question 6
@@ -119,7 +118,7 @@ declaration to indicate that it is a variadic function?
 “->”
 
 
-”...”
+X - ”...”
 
 
 "---"
@@ -131,7 +130,6 @@ declaration to indicate that it is a variadic function?
 Question 7
 What does this routine produce?
 
-1234567891011121314151617
 package main
 
 import "fmt"
