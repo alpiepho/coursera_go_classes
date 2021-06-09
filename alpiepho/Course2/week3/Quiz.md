@@ -7,7 +7,7 @@ What is the difference between an object and a class?
 An object is a field of data inside a class.
 
 
-A class is a template and an object is an instance of that template.
+X - A class is a template and an object is an instance of that template.
 
 
 An object is a particular kind of class.
@@ -21,7 +21,7 @@ What is the difference between a struct in Go and a class in an object-oriented 
 
 1 point
 
-A struct contains only data while a class can also contain methods.
+X - A struct contains only data while a class can also contain methods.
 
 
 A class describes data fields but a struct does not.
@@ -47,7 +47,7 @@ Polymorphism
 Inheritance
 
 
-Encapsulation
+X - Encapsulation
 
 4.
 Question 4
@@ -55,7 +55,7 @@ How do you associate a method with an arbitrary data type on Go?
 
 1 point
 
-Define the method so that its receiver type is the data type of interest.
+X - Define the method so that its receiver type is the data type of interest.
 
 
 Define the method inside the data type definition.
@@ -78,7 +78,7 @@ Use the package keyword
 Use the private keyword.
 
 
-Give the variable/function a name which starts with a lower-case letter
+X - Give the variable/function a name which starts with a lower-case letter
 
 
 Define the variable/function inside the package.
@@ -95,7 +95,7 @@ Foo(t1)
 Foo(t)
 
 
-t1.Foo()
+X - t1.Foo()
 
 
 t.Foo(t1)
@@ -116,7 +116,7 @@ Only I
 Only II
 
 
-Both I and II
+X - Both I and II
 
 
 Neither I nor II
