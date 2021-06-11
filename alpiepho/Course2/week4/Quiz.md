@@ -13,7 +13,7 @@ When the definition of a class changes over time.
 When multiple objects have distinct methods.
 
 
-When one thing can have multiple forms.
+X - When one thing can have multiple forms.
 
 2.
 Question 2
@@ -24,7 +24,7 @@ Which of the following statements is true?
 Inheritance and overriding are required for polymorphism.
 
 
-Inheritance and overriding enable polymorphism.
+X - Inheritance and overriding enable polymorphism.
 
 
 Overriding is necessary for inheritance.
@@ -38,7 +38,7 @@ If a type satisfies an interface, which of the following statements is true?
 
 1 point
 
-The type defines all methods specified in the interface.
+X -The type defines all methods specified in the interface.
 
 
 The type defines all data specified in the interface.
@@ -55,7 +55,7 @@ Which of the following statements is true?
 
 1 point
 
-A concrete type is always a dynamic type.
+X - A concrete type is always a dynamic type.
 
 
 An interface always has a dynamic value.
@@ -81,7 +81,7 @@ iii. Type assertions return two values.
 I and II but NOT III.
 
 
-II and III but NOT I.
+X - II and III but NOT I.
 
 
 I and III but NOT II.
@@ -101,7 +101,7 @@ It allows two interfaces to be merged into one.
 It allows a function to accept a variable number of arguments.
 
 
-It can be used to allow a function to accept any type as a parameter.
+X - It can be used to allow a function to accept any type as a parameter.
 
 
 An empty interface cannot exist in Go.
@@ -112,3 +112,4 @@ After executing the expression below, what is the value of err if there is no er
 
 f, err := os.Open(“/harris/test.txt”)
 
+TODO
