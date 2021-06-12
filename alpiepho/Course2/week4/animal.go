@@ -85,22 +85,63 @@ func buildEntry(name, animal string) interface{ Entry } {
 }
 
 func printEntryList(entries []interface{ Entry }) {
-	for _, e := range entries {
-		fmt.Println(e.Name())
-		fmt.Println(e.Eat())
-		fmt.Println(e.Move())
-		fmt.Println(e.Speak())
-		fmt.Println()
+	fmt.Printf("entries: %v\n", entries)
+}
+
+func processLine(entries *[]interface{ Entry }, line string) {
+	words := strings.Fields(line)
+	if len(words) == 3 {
+		result := ""
+		commandStr := words[0]
+		nameStr := words[1]
+		paramStr := words[2]
+		switch commandStr {
+		case "newanimal":
+			*entries = append(*entries, buildEntry(nameStr, paramStr))
+			//printEntryList(entries)
+		case "query":
+			for _, e := range *entries {
+				if e.Name() == nameStr {
+					switch paramStr {
+					case "eat":
+						result = e.Eat()
+					case "move":
+						result = e.Move()
+					case "speak":
+						result = e.Speak()
+					}
+				}
+			}
+			if len(result) > 0 {
+				fmt.Println(result)
+			}
+		}
 	}
+}
+
+func testLines(entries *[]interface{ Entry }) {
+	processLine(entries, "newanimal aaa cow")
+	printEntryList(*entries)
+	processLine(entries, "query aaa eat")
+	processLine(entries, "query aaa move")
+	processLine(entries, "query aaa speak")
+
+	processLine(entries, "newanimal bbb bird")
+	printEntryList(*entries)
+	processLine(entries, "query bbb eat")
+	processLine(entries, "query bbb move")
+	processLine(entries, "query bbb speak")
+
+	processLine(entries, "newanimal ccc snake")
+	printEntryList(*entries)
+	processLine(entries, "query ccc eat")
+	processLine(entries, "query ccc move")
+	processLine(entries, "query ccc speak")
+
 }
 
 func main() {
 	var entries []interface{ Entry }
-	//entries = append(entries, buildEntry("cow", "cow"))
-	//entries = append(entries, buildEntry("bird", "bird"))
-	//entries = append(entries, buildEntry("snake", "snake"))
-	//printEntryList(entries)
-
 	for true {
 		// prompt and input as string
 		fmt.Print("> ")
@@ -110,35 +151,9 @@ func main() {
 			fmt.Println(err)
 			continue
 		}
-
-		// words should be: newanimal, name, animal   or   query, name, trait
-		words := strings.Fields(line)
-		if len(words) == 3 {
-			result := ""
-			commandStr := words[0]
-			nameStr := words[1]
-			paramStr := words[2]
-			switch commandStr {
-			case "newanimal":
-				entries = append(entries, buildEntry(nameStr, paramStr))
-				//printEntryList(entries)
-			case "query":
-				for _, e := range entries {
-					if e.Name() == nameStr {
-						switch paramStr {
-						case "eat":
-							result = e.Eat()
-						case "move":
-							result = e.Move()
-						case "speak":
-							result = e.Speak()
-						}
-					}
-				}
-				if len(result) > 0 {
-					fmt.Println(result)
-				}
-			}
+		if strings.TrimSpace(line) == "test" {
+			testLines(&entries)
 		}
+		processLine(&entries, line)
 	}
 }
