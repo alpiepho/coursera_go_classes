@@ -49,45 +49,57 @@ type Snake struct {
 	Animal
 }
 
+func buildEntry(name, animal string) interface{ Entry } {
+	var result Entry
+
+	switch animal {
+	case "cow":
+		result = Cow{
+			Animal{
+				name:       name,
+				food:       "grass",
+				locomotion: "walk",
+				noise:      "moo",
+			},
+		}
+	case "bird":
+		result = Bird{
+			Animal{
+				name:       name,
+				food:       "worms",
+				locomotion: "fly",
+				noise:      "peep",
+			},
+		}
+	case "snake":
+		result = Snake{
+			Animal{
+				name:       name,
+				food:       "mice",
+				locomotion: "slither",
+				noise:      "hiss",
+			},
+		}
+	}
+	return result
+}
+
 func printEntryList(entries []interface{ Entry }) {
 	for _, e := range entries {
 		fmt.Println(e.Name())
 		fmt.Println(e.Eat())
 		fmt.Println(e.Move())
 		fmt.Println(e.Speak())
+		fmt.Println()
 	}
 }
 
 func main() {
-	cow := Cow{
-		Animal{
-			name:       "cow",
-			food:       "grass",
-			locomotion: "walk",
-			noise:      "moo",
-		},
-	}
-	bird := Bird{
-		Animal{
-			name:       "bird",
-			food:       "worms",
-			locomotion: "fly",
-			noise:      "peep",
-		},
-	}
-	snake := Snake{
-		Animal{
-			name:       "snake",
-			food:       "mice",
-			locomotion: "slither",
-			noise:      "hiss",
-		},
-	}
 	var entries []interface{ Entry }
-	entries = append(entries, cow)
-	entries = append(entries, bird)
-	entries = append(entries, snake)
-	printEntryList(entries)
+	//entries = append(entries, buildEntry("cow", "cow"))
+	//entries = append(entries, buildEntry("bird", "bird"))
+	//entries = append(entries, buildEntry("snake", "snake"))
+	//printEntryList(entries)
 
 	for true {
 		// prompt and input as string
@@ -99,26 +111,33 @@ func main() {
 			continue
 		}
 
-		words := strings.Fields(line) // animal, trait
-		if len(words) == 2 {
+		// words should be: newanimal, name, animal   or   query, name, trait
+		words := strings.Fields(line)
+		if len(words) == 3 {
 			result := ""
-			animalStr := words[0]
-			traitStr := words[1]
-
-			for _, e := range entries {
-				if e.Name() == animalStr {
-					switch traitStr {
-					case "eat":
-						result = e.Eat()
-					case "move":
-						result = e.Move()
-					case "speak":
-						result = e.Speak()
+			commandStr := words[0]
+			nameStr := words[1]
+			paramStr := words[2]
+			switch commandStr {
+			case "newanimal":
+				entries = append(entries, buildEntry(nameStr, paramStr))
+				//printEntryList(entries)
+			case "query":
+				for _, e := range entries {
+					if e.Name() == nameStr {
+						switch paramStr {
+						case "eat":
+							result = e.Eat()
+						case "move":
+							result = e.Move()
+						case "speak":
+							result = e.Speak()
+						}
 					}
 				}
-			}
-			if len(result) > 0 {
-				fmt.Println(result)
+				if len(result) > 0 {
+					fmt.Println(result)
+				}
 			}
 		}
 	}
