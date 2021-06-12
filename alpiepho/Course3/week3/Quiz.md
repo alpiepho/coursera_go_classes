@@ -13,7 +13,7 @@ start test1()
 goroutine test1()
 
 
-go test1()
+X - go test1()
 
 2.
 Question 2
@@ -36,7 +36,7 @@ I and III, NOT II.
 I, II, and III.
 
 
-I only.
+X - I only.
 
 3.
 Question 3
@@ -53,7 +53,7 @@ III. Allow a goroutine to continue to execute after the main goroutine has compl
 I, II, and III.
 
 
-I only.
+X - I only.
 
 
 I and III, NOT II.
@@ -67,7 +67,7 @@ If a goroutine g1 is using a WaitGroup wg to wait until another goroutine g2 com
 
 1 point
 
-wg.Done()
+X - wg.Done()
 
 
 wg.End()
@@ -90,7 +90,7 @@ wg.Fork()
 wg.Start()
 
 
-wg.Add()
+X - wg.Add()
 
 
 wg.Begin()
@@ -104,7 +104,7 @@ How might you write code to allow a goroutine to receive data from a channel c?
 x <- c
 
 
-x = <- c
+X - x = <- c
 
 
 x = c
@@ -118,7 +118,7 @@ What is the difference between a buffered channel and an unbuffered channel?
 
 1 point
 
-A buffered channel can hold multiple objects until they are read. An unbuffered channel cannot.
+X - A buffered channel can hold multiple objects until they are read. An unbuffered channel cannot.
 
 
 A buffered channel delays the transmission of data. An unbuffered channel does not.

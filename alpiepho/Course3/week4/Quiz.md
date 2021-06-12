@@ -13,7 +13,7 @@ for i := range ch1
 for i, err <- range ch1
 
 
-for i := ch1
+X - for i := ch1
 
 2.
 Question 2
@@ -24,7 +24,7 @@ What does the select keyword do?
 Executes a set of case statements.
 
 
-Allows a choice of channels to wait on.
+X - Allows a choice of channels to wait on.
 
 
 Chooses the greatest of a set of numbers.
@@ -38,7 +38,7 @@ What is the meaning of the default clause inside a select?
 
 1 point
 
-The default clause is executed if all case clauses are blocked.
+X - The default clause is executed if all case clauses are blocked.
 
 
 The default clause is executed before any case clause is executed.
@@ -72,7 +72,7 @@ II and III only.
 I, II, and III but not IV.
 
 
-II, III, IV, but not I.
+X - II, III, IV, but not I.
 
 5.
 Question 5
@@ -86,7 +86,7 @@ When a single goroutine can execute only one of two blocks of code.
 When a single goroutine cannot execute a block of code.
 
 
-When multiple goroutines cannot execute blocks of code concurrently.
+X - When multiple goroutines cannot execute blocks of code concurrently.
 
 
 When a single goroutine is the only goroutine which ever accesses a variable.
@@ -106,7 +106,7 @@ III.   It can be caused by waiting on channels
 I and II only.
 
 
-II and III only.
+X - II and III only.
 
 
 I and III only.
@@ -120,7 +120,7 @@ What is the method of the sync.mutex type which must be called at the beginning 
 
 1 point
 
-Lock()
+X - Lock()
 
 
 Unlock()
