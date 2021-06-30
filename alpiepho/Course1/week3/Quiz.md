@@ -121,7 +121,7 @@ func main() {
 
 1 point
 
-a
+X - a
 
 
 b

@@ -1,29 +1,26 @@
 package main
 
 import (
+	"bufio"
 	"encoding/json"
 	"fmt"
+	"os"
 )
 
 func main() {
 	// initialize map
 	values := make(map[string]string)
+	scanner := bufio.NewScanner(os.Stdin)
 
 	// prompt and save to map
 	var svalue string
 	fmt.Print("enter name: ")
-	_, err := fmt.Scanf("%s", &svalue)
-	if err != nil {
-		fmt.Println(err)
-		return
-	}
+	scanner.Scan()
+	svalue = scanner.Text()
 	values["name"] = svalue
 	fmt.Print("enter address: ")
-	_, err = fmt.Scanf("%s", &svalue)
-	if err != nil {
-		fmt.Println(err)
-		return
-	}
+	scanner.Scan()
+	svalue = scanner.Text()
 	values["address"] = svalue
 
 	// convert to json and print
