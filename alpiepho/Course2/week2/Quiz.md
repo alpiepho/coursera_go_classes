@@ -19,10 +19,10 @@ f = test
 
 1 point
 
-X - Yes
+Yes
 
 
-No
+X - No
 
 2.
 Question 2
@@ -69,7 +69,7 @@ as an argument and returns an integer?
 
 1 point
 
-func fA(fB (int) string) func (string) int
+? - func fA(fB (int) string) func (string) int
 
 
 func fA(fB func (int) string) {}
@@ -78,7 +78,7 @@ func fA(fB func (int) string) {}
 func fA(int) string {} 
 
 
-X - func fA() fB func (string) int{}
+func fA() fB func (string) int{}
 
 5.
 Question 5
@@ -92,12 +92,14 @@ func fA() func() int {
 func main() {
    fB := fA()
    fmt.Print(fB())
+   fmt.Print(fB())
+}
 
 What does the above code print on the screen?
 
 1 point
 
-12
+X - 12
 
 
 11
@@ -106,7 +108,7 @@ What does the above code print on the screen?
 01
 
 
-X - 1
+1
 
 6.
 Question 6
@@ -152,4 +154,4 @@ fmt.Print(i)
 234
 
 
-123
+X - 123

@@ -7,8 +7,8 @@ import (
 
 func GenDisplaceFn(a, vo, so float64) func(t float64) float64 {
 	return func(t float64) float64 {
-		// s = ½ a t2 + vot + so
-		return (0.5 * a * t) + vo + so
+		// s = ½ a t^2 + vo*t + so
+		return (0.5 * a * t * t) + (vo * t) + so
 	}
 }
 
@@ -55,5 +55,6 @@ func main() {
 	}
 
 	fn := GenDisplaceFn(a, vo, so)
+	fmt.Printf("fn(%v):\n", t)
 	fmt.Println(fn(t))
 }
