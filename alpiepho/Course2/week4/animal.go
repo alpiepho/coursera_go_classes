@@ -21,22 +21,6 @@ type Animal struct {
 	noise      string
 }
 
-func (a Animal) Name() string {
-	return a.name
-}
-
-func (a Animal) Eat() string {
-	return a.food
-}
-
-func (a Animal) Move() string {
-	return a.locomotion
-}
-
-func (a Animal) Speak() string {
-	return a.noise
-}
-
 type Cow struct {
 	Animal
 }
@@ -47,6 +31,72 @@ type Bird struct {
 
 type Snake struct {
 	Animal
+}
+
+func (a Cow) Name() string {
+	return a.name
+}
+
+func (a Cow) Eat() string {
+	return a.food
+}
+
+// NOTE: this works but doesn't meet the definition of the Problem
+// func (a Animal) Name() string {
+// 	return a.name
+// }
+
+// func (a Animal) Eat() string {
+// 	return a.food
+// }
+
+// func (a Animal) Move() string {
+// 	return a.locomotion
+// }
+
+// func (a Animal) Speak() string {
+// 	return a.noise
+// }
+
+// NOTE: this works but seems overkill (seen other solutions that printed here)
+func (a Cow) Move() string {
+	return a.locomotion
+}
+
+func (a Cow) Speak() string {
+	return a.noise
+}
+
+func (a Bird) Name() string {
+	return a.name
+}
+
+func (a Bird) Eat() string {
+	return a.food
+}
+
+func (a Bird) Move() string {
+	return a.locomotion
+}
+
+func (a Bird) Speak() string {
+	return a.noise
+}
+
+func (a Snake) Name() string {
+	return a.name
+}
+
+func (a Snake) Eat() string {
+	return a.food
+}
+
+func (a Snake) Move() string {
+	return a.locomotion
+}
+
+func (a Snake) Speak() string {
+	return a.noise
 }
 
 func buildEntry(name, animal string) interface{ Entry } {
