@@ -7,13 +7,13 @@ What line of code could be used to define a loop which iteratively reads from a 
 for i <- ch1
 
 
-for i := range ch1
+X - for i := range ch1
 
 
 for i, err <- range ch1
 
 
-X - for i := ch1
+X! - for i := ch1
 
 2.
 Question 2

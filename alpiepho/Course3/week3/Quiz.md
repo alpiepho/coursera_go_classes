@@ -30,13 +30,13 @@ III. When the main goroutine completes.
 I and II, NOT III.
 
 
-I and III, NOT II.
+X - I and III, NOT II.
 
 
 I, II, and III.
 
 
-X - I only.
+X! - I only.
 
 3.
 Question 3
@@ -53,13 +53,13 @@ III. Allow a goroutine to continue to execute after the main goroutine has compl
 I, II, and III.
 
 
-X - I only.
+X! - I only.
 
 
 I and III, NOT II.
 
 
-I and II, NOT III.
+X - I and II, NOT III.
 
 4.
 Question 4

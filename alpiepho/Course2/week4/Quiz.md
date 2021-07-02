@@ -55,13 +55,13 @@ Which of the following statements is true?
 
 1 point
 
-X - A concrete type is always a dynamic type.
+X! - A concrete type is always a dynamic type.
 
 
 An interface always has a dynamic value.
 
 
-An interface always has a dynamic type.
+X - An interface always has a dynamic type.
 
 
 An interface type is the same as a dynamic type.
@@ -81,7 +81,7 @@ iii. Type assertions return two values.
 I and II but NOT III.
 
 
-X - II and III but NOT I.
+X! - II and III but NOT I.
 
 
 I and III but NOT II.
@@ -108,8 +108,20 @@ An empty interface cannot exist in Go.
 
 7.
 Question 7
+Question 7
 After executing the expression below, what is the value of err if there is no error?
 
 f, err := os.Open(“/harris/test.txt”)
 
-TODO
+1 point
+
+X - nil
+
+
+0
+
+
+–1
+
+
+–2
