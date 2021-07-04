@@ -19,10 +19,10 @@ f = test
 
 1 point
 
-Yes
+X - Yes
 
 
-X - No
+No
 
 2.
 Question 2
@@ -69,10 +69,10 @@ as an argument and returns an integer?
 
 1 point
 
-? - func fA(fB (int) string) func (string) int
+func fA(fB (int) string) func (string) int
 
 
-func fA(fB func (int) string) {}
+X - func fA(fB func (int) string) {}
 
 
 func fA(int) string {} 
